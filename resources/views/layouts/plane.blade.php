@@ -15179,11 +15179,12 @@ $(function() {
 
 var dados = [];
 
-@foreach($temp as $temp)
+@foreach($temp as $tp)
 
-	dados.push({{$temp}});
+	dados.push({{$tp}});
 
 @endforeach
+
 
 var lineChartData = {
     labels : ["Janeiro","Fevereiro","Março","Abril","Maio","Junho","Julho"],

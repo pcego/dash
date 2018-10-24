@@ -28,13 +28,15 @@ Route::get('/home', 'HomeController@index');
 Route::get('/usersettings', 'UserController@index');
 
 Route::get('/generalsettings', function (){
-    return view('/settings/generalsettings');
+    $temp = [];
+    return view('/settings/generalsettings', compact('temp'));
 });
 
 Route::get('/reports', 'ArduinoController@index');
 
 Route::get('/about', function (){
-    return view('/about/aboutus');
+    $temp = [];
+    return view('/about/aboutus', compact('temp'));
 });
 
 
